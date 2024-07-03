@@ -24,7 +24,7 @@ const SearchSection: React.FC = () => {
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                   <img
                     className="w-4"
-                    src={require("../../assets/images/search-icon.png")}
+                    src={require("../../assets/images/SearchIcon.png")}
                     alt="search"
                   />
                 </div>

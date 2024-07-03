@@ -25,7 +25,7 @@ export const Navbar: React.FC = () => {
                     <Link to={"/"}>
                       <img
                         className="h-7 md:h-8 w-auto"
-                        src={require("../../assets/images/logo.png")}
+                        src={require("../../assets/images/Logo.png")}
                         alt="Workflow"
                       />
                     </Link>
@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
                       <span className="lg:flex items-center hidden">
                         <img
                           className="inline w-[10px] h-[10px]"
-                          src={require("../../assets/images/nav-vector.png")}
+                          src={require("../../assets/images/NavVector.png")}
                           alt=""
                         />
                       </span>
@@ -70,7 +70,7 @@ export const Navbar: React.FC = () => {
                       <span className="cursor-pointer mx-3 py-2 rounded-md text-sm font-medium">
                         <img
                           className="w-3"
-                          src={require("../../assets/images/profile.png")}
+                          src={require("../../assets/images/Profile.png")}
                           alt="user"
                         />
                       </span>
@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
                         <Link to={"/search"}>
                           <img
                             className="w-4"
-                            src={require("../../assets/images/search-icon.png")}
+                            src={require("../../assets/images/SearchIcon.png")}
                             alt="search"
                           />
                         </Link>
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
                       >
                         <img
                           className="block h-4 w-4 ms-2"
-                          src={require("../../assets/images/menu-lines.png")}
+                          src={require("../../assets/images/MenuLines.png")}
                           alt="menu"
                         />
                       </button>
@@ -103,7 +103,7 @@ export const Navbar: React.FC = () => {
                       <span className="cursor-pointer mx-3 py-2 rounded-md text-sm font-medium">
                         <img
                           className="w-3"
-                          src={require("../../assets/images/profile.png")}
+                          src={require("../../assets/images/Profile.png")}
                           alt="user"
                         />
                       </span>
@@ -112,7 +112,7 @@ export const Navbar: React.FC = () => {
                         <Link to={"/search"}>
                           <img
                             className="w-4"
-                            src={require("../../assets/images/search-icon.png")}
+                            src={require("../../assets/images/SearchIcon.png")}
                             alt="search"
                           />
                         </Link>
@@ -126,7 +126,7 @@ export const Navbar: React.FC = () => {
                       >
                         <img
                           className="block h-4 w-4 ms-2"
-                          src={require("../../assets/images/menu-lines.png")}
+                          src={require("../../assets/images/MenuLines.png")}
                           alt="menu"
                         />
                       </button>
@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
                     <span className="cursor-pointer mx-3 py-2 rounded-md text-sm font-medium">
                       <img
                         className="w-4"
-                        src={require("../../assets/images/profile.png")}
+                        src={require("../../assets/images/Profile.png")}
                         alt="user"
                       />
                     </span>
@@ -147,7 +147,7 @@ export const Navbar: React.FC = () => {
                       <Link to={"/search"}>
                         <img
                           className="w-5"
-                          src={require("../../assets/images/search-icon.png")}
+                          src={require("../../assets/images/SearchIcon.png")}
                           alt="search"
                         />
                       </Link>
@@ -156,7 +156,7 @@ export const Navbar: React.FC = () => {
                     <span className="ps-3 flex items-center">
                       <img
                         className="w-6 h-4"
-                        src={require("../../assets/images/menu-lines.png")}
+                        src={require("../../assets/images/MenuLines.png")}
                         alt="menu"
                       />
                     </span>

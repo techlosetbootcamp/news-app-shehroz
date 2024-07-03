@@ -1,5 +1,3 @@
-// NewsArticle.tsx
-
 import React from "react";
 import { IoIosHeartEmpty, IoIosHeart, IoMdClose } from "react-icons/io";
 import { IoBookmark, IoShareOutline } from "react-icons/io5";
@@ -11,7 +9,7 @@ import {
   useLikeStatus,
   useSaveStatus,
 } from "./useNewsArticle";
-import { ModalProps } from "../../types/types"; // Import types from your types file
+import { ModalProps } from "../../types/types";
 
 export const NewsArticle: React.FC<ModalProps> = ({
   open,

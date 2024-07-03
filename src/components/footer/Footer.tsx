@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
                 <Link to={"/"}>
                   <img
                     className="w-20"
-                    src={require("../../assets/images/footer-logo.png")}
+                    src={require("../../assets/images/FooterLogo.png")}
                     alt="News-App"
                   />
                 </Link>

@@ -9,7 +9,6 @@ import { useAppSelector } from "../../hooks/useStore";
 const Hero: React.FC = () => {
   const { isLiked, isSaved, toggleLike, toggleSave } = useHero();
   const { articles, loading, error } = useAppSelector((state) => state.news);
-  // const { articles, loading, error } = useNewsSelector();
 
   if (loading)
     return (
@@ -85,7 +84,6 @@ const Hero: React.FC = () => {
         </div>
       </article>
 
-      {/* Breaking News Section */}
       <div className="py-4 flex flex-wrap  gap-3 sm:gap-12 bg-danger justify-center sm:my-8">
         <button className="bg-white border border-danger text-danger px-4 rounded-sm py-2 hover:text-white hover:bg-danger hover:border hover:border-white">
           Breaking News

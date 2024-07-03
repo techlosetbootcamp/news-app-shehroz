@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import axiosInstance from "../api/axiosInstance";
+import axiosInstance from "../../utils/axiosInstance";
 import { Article, NYTArticle, NewsState } from "../../types/types";
 
 const initialState: NewsState = {

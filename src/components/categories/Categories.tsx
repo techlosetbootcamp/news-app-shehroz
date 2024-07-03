@@ -36,7 +36,7 @@ const Categories: React.FC = () => {
         <div className="max-sm:hidden">
           <img
             className="w-5"
-            src={require("../../assets/images/categories-layout.png")}
+            src={require("../../assets/images/CategoriesLayout.png")}
             alt="Layout-Layout"
           />
         </div>
