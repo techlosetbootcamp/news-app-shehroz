@@ -28,20 +28,20 @@ const Hero: React.FC = () => {
 
   return (
     <div className="">
-      <article className="max-md:relative md:gap-12 max-md:h-[80vh] max-md:isolate flex max-md:flex-col max-md:justify-end overflow-hidden md:grid md:grid-cols-2 max-md:pb-6 max-md:pt-40 w-full mx-auto">
+      <article className="max-lg:relative lg:gap-12 max-md:h-[80vh] max-lg:h-[500px] max-lg:isolate flex max-lg:flex-col max-lg:justify-end overflow-hidden lg:grid lg:grid-cols-2 max-lg:pb-6 max-lg:pt-40 w-full mx-auto">
         <img
           src={
             articles[0]?.imageUrl ||
             `https://placehold.co/4000x4000?text=${articles[0]?.title}`
           }
           alt={articles[0]?.title}
-          className="max-md:absolute max-md:inset-0 max-md:h-full md:h-96 max-md:w-full lg:w-full object-cover"
+          className="max-lg:absolute max-lg:inset-0 max-lg:h-full sm:w-[750px] sm:h-[500px] max-lg:w-full lg:w-full object-cover"
         />
-        <div className="absolute md:hidden inset-0 bg-gradient-to-t from-gray-900 via-gray-900/30"></div>
-        <div className="max-md:z-10 md:text-dark max-md:mt-3 md:flex md:items-center px-1 max-md:text-white">
+        <div className="absolute lg:hidden inset-0 bg-gradient-to-t from-gray-900 via-gray-900/30"></div>
+        <div className="max-lg:z-10 lg:text-dark max-lg:mt-3 lg:flex lg:items-center px-1 max-lg:text-white">
           <div>
-            <div className="flex justify-between max-md:hidden my-3">
-              <p className="text-danger text-md font-bold">Trending</p>
+            <div className="flex justify-between max-lg:hidden my-3">
+              <p className="text-danger text-[14px] font-semibold font-poppins">Trending</p>
               <div className="flex justify-center gap-4">
                 <p className="cursor-pointer flex items-center">
                   {!isLiked ? (
@@ -65,15 +65,15 @@ const Hero: React.FC = () => {
             <Link
               to={articles[0]?.url}
               target="_blank"
-              className="max-md:font-serif font-medium md:font-semibold text-xl md:text-2xl md:text-dark md:hover:text-danger"
+              className="font-ibm font-semibold text-2xl md:text-[32px] lg:text-dark lg:hover:text-danger"
             >
               {articles[0]?.title}
             </Link>
-            <div className="max-md:hidden">
-              <p className="z-10 w-[90%] gap-y-1 overflow-hidden text-md leading-6 max-md:text-gray-300 text-sm my-4">
+            <div className="font-poppins">
+              <p className="max-md:hidden z-10 w-[90%] gap-y-1 overflow-hidden leading-6 max-md:text-gray-300  my-4 text-[15px]">
                 {articles[0]?.fullDescription}
               </p>
-              <div className="flex gap-10 text-xs">
+              <div className="max-lg:hidden flex gap-10 text-[13px] mt-7">
                 <p>2 days ago</p>
                 <p className="text-secondary">
                   {articles[0]?.author} &nbsp; | &nbsp; 4min read
@@ -84,13 +84,15 @@ const Hero: React.FC = () => {
         </div>
       </article>
 
-      <div className="py-4 flex flex-wrap  gap-3 sm:gap-12 bg-danger justify-center sm:my-8">
-        <button className="bg-white border border-danger text-danger px-4 rounded-sm py-2 hover:text-white hover:bg-danger hover:border hover:border-white">
-          Breaking News
-        </button>
-        <p className="my-auto text-center px-1 text-white">
-          Kanye West says he's running for president in 2020.
-        </p>
+      <div className="h-[181px] bg-danger justify-center sm:h-[80px] lg:my-8 font-poppins flex items-center">
+        <div className="flex max-sm:flex-col max-sm:items-center justify-center gap-3 lg:gap-12 md:w-[738px] mx-auto text-center">
+          <button className="bg-white border border-danger text-danger rounded-sm w-[215px] h-[48px] md:w-[157px] lg:h-[54px] hover:text-white hover:bg-danger hover:border hover:border-white">
+            Breaking News
+          </button>
+          <p className="my-auto text-center text-white font-[500] text-[20px]">
+            Kanye West says he's running for president in 2020.
+          </p>
+        </div>
       </div>
     </div>
   );

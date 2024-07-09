@@ -30,7 +30,7 @@ export const NewsArticle: React.FC<ModalProps> = ({
     >
       <div className="absolute inset-0" onClick={onClose}></div>
       <div
-        className={`bg-white rounded-lg overflow-hidden w-11/12 p-5 relative transform transition-all duration-300 ${
+        className={`bg-white rounded-[20px] 2xl:h-[596px] overflow-hidden w-11/12 p-5 relative transform transition-all duration-300 ${
           open ? "scale-100" : "scale-95"
         }`}
       >
@@ -41,7 +41,7 @@ export const NewsArticle: React.FC<ModalProps> = ({
           <IoMdClose size={24} />
         </button>
         <div className="w-full">&nbsp;</div>
-        <article className="grid sm:grid-cols-2 sm:gap-10 pb-2">
+        <article className="grid lg:grid-cols-2 sm:gap-0 md:gap-4 lg:gap-10 2xl:gap-0 pb-2 sm:mt-1 md:mt-5 lg:mt-0">
           <div>
             <img
               src={
@@ -49,14 +49,14 @@ export const NewsArticle: React.FC<ModalProps> = ({
                 `https://placehold.co/4000x4000?text=${article?.title}`
               }
               alt={article?.title}
-              className="max-h-60 md:max-h-96 w-full object-cover"
+              className="max-h-60 md:max-h-96 w-full object-cover h-[347px] 2xl:min-w-[750px] 2xl:min-h-[500px] 2xl:max-w-[750px] 2xl:max-h-[500px]"
             />
           </div>
           <div className="grid items-center">
             <div className="sm:text-dark max-sm:mt-3 sm:flex sm:items-center px-1">
               <div>
                 <div className="flex justify-between my-1 sm:my-3">
-                  <p className="text-danger text-md font-bold">Trending</p>
+                  <p className="text-danger text-md font-semibold font-poppins text-[15px]">Trending</p>
                   <div className="flex justify-center gap-4 max-sm:hidden">
                     <p className="cursor-pointer flex items-center">
                       {!isLiked ? (
@@ -80,12 +80,12 @@ export const NewsArticle: React.FC<ModalProps> = ({
                 <Link
                   to={article?.url}
                   target="_blank"
-                  className="font-serif font-medium sm:font-semibold text-xl sm:text-2xl sm:text-dark sm:hover:text-danger"
+                  className="font-ibm font-semibold sm:text-[32px] sm:text-dark sm:hover:text-danger"
                 >
                   {article?.title}
                 </Link>
-                <div>
-                  <p className="text-gray-700 w-[90%] gap-y-1 overflow-hidden leading-5 text-sm my-4">
+                <div className="font-poppins">
+                  <p className="text-gray-700 w-[90%] gap-y-1 overflow-hidden leading-5 my-4 text-[15px]">
                     {article?.fullDescription}
                   </p>
                   <div className="flex sm:gap-10 max-sm:flex-col max-sm:gap-1 max-sm:items-center text-xs">

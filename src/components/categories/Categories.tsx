@@ -7,7 +7,7 @@ const Categories: React.FC = () => {
 
   return (
     <>
-      <div className="flex justify-between sm:mt-2 mb-2 bg-white py-2 px-3 sm:rounded items-center">
+      <div className="flex justify-between lg:mt-2 mb-2 bg-white h-[83px] md:h-[54px] px-3 sm:rounded items-center font-poppins">
         <div className="flex gap-7">
           {path !== "/search" ? (
             <>

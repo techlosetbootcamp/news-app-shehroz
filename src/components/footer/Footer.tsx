@@ -8,20 +8,20 @@ export const Footer: React.FC = () => {
 
   return (
     <>
-      <div className="bg-primary text-white">
-        <div className="container w-[95%] sm:w-[85%] 2xl:w-[80%] mx-auto min-h-72 sm:min-h-60 flex items-center text-center">
-          <div className="grid md:grid-cols-3 w-full">
-            <div className="flex justify-start items-start md:w-max flex-col">
+      <div className="bg-primary text-white font-poppins">
+        <div className="container w-[95%] lg:w-[85%] 2xl:w-[80%] mx-auto max-md:h-[290px] md:h-[250px] flex items-center text-center">
+          <div className="grid lg:grid-cols-3 w-full max-md:gap-0 max-lg:gap-6 lg:h-[117px] lg:w-[1133px] mx-auto">
+            <div className="flex justify-start max-lg:h-[73px] items-start lg:w-max flex-col">
               <p className="mx-auto">
                 <Link to={"/"}>
                   <img
-                    className="w-20"
+                    className="w-[66px] h-[40px]"
                     src={require("../../assets/images/FooterLogo.png")}
                     alt="News-App"
                   />
                 </Link>
               </p>
-              <p className="text-gray-400 mt-auto text-sm max-md:text-center max-md:w-full">
+              <p className="text-gray-400 my-auto text-[12px] max-lg:text-center max-lg:w-full">
                 copyright &copy; {year} |{" "}
                 <Link
                   to={"https://www.linkedin.com/in/shehroz-arshad/"}
@@ -31,8 +31,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </p>
             </div>
-            <div className="hidden text-start sm:flex flex-col max-lg:my-4">
-              <div className="text-[15px]">
+            <div className="hidden text-start lg:flex flex-col max-lg:my-4">
+              <div className="text-[15px] font-[500]">
                 <p className="mb-1">Privacy Policy</p>
                 <p className="mb-1">Do not sell my personal info</p>
                 <p className="mb-1">Terms of service</p>
@@ -44,8 +44,8 @@ export const Footer: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col justify-around gap-1">
-              <div className="flex max-sm:flex-col justify-center max-sm:my-3 md:justify-end sm:gap-6 max-sm:text-[15px]">
+            <div className="flex flex-col justify-start gap-1 lg:gap-9">
+              <div className="flex max-sm:flex-col justify-center max-sm:my-3 lg:justify-end md:gap-10 lg:gap-14 lg:w-[387px] text-[15px] font-[500]">
                 <Link
                   className="hover:underline hover:underline-offset-2"
                   to={"#"}
@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
                   Coupons
                 </Link>
               </div>
-              <div className="flex justify-center md:ms-auto gap-8 max-sm:my-3">
+              <div className="flex justify-center lg:ms-auto gap-8 lg:gap-14 max-lg:my-3">
                 <TiWiFi
                   className="cursor-pointer hover:text-gray-400"
                   size={"28"}

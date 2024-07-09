@@ -38,12 +38,12 @@ const NewsCard: React.FC = () => {
 
   return (
     <>
-      <div className="grid md:grid-cols-3 gap-6 my-4 mx-2 text-dark">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-4 max-md:mx-3 text-dark">
         {articles?.slice(1).map((article, i) => (
           <div key={i} className="flex flex-col bg-white shadow-lg rounded-sm">
             <div onClick={() => setSelectedArticle(article)}>
               <img
-                className="cursor-pointer w-full object-cover h-60"
+                className="cursor-pointer w-full object-cover md:w[438px] h-[210px]"
                 src={
                   article?.imageUrl ||
                   `https://placehold.co/4000x4000?text=${article?.title}`
@@ -55,15 +55,15 @@ const NewsCard: React.FC = () => {
               <div>
                 <p
                   onClick={() => setSelectedArticle(article)}
-                  className="font-bold font-serif hover:text-danger cursor-pointer"
+                  className="font-semibold text-lg font-ibm hover:text-danger cursor-pointer"
                 >
                   {article?.title}
                 </p>
-                <p className="text-[13px] my-3 md:h-32">
+                <p className="text-[15px] font-nunito my-3 md:h-32">
                   {article?.description}
                 </p>
               </div>
-              <div className="flex gap-10 text-xs">
+              <div className="flex gap-10 font-poppins text-[13px]">
                 <p>{formatDistanceToNow(new Date(article?.publishedAt))} ago</p>
                 <p className="text-secondary">
                   <span className="px-1">{article?.author} </span>
@@ -73,8 +73,8 @@ const NewsCard: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="border-t border-dark/20 py-2">
-              <div className="flex justify-center gap-8">
+            <div className="border-t border-dark/20 py-4">
+              <div className="flex justify-center gap-8 font-poppins">
                 <p className="cursor-pointer flex items-center">
                   <IoIosHeartEmpty />
                   <span className="text-xs ms-1">{article?.likes}</span>
@@ -105,10 +105,10 @@ const NewsCard: React.FC = () => {
           <div className="w-10 h-10 border-t-2 border-r-2 border-b-2 border-l-2 border-blue-500 animate-spin"></div>
         </div>
       )}
-      <div className="flex justify-center mt-5 pb-3">
+      <div className="flex justify-center mt-8 pb-3">
         <button
           onClick={loadMoreArticles}
-          className="uppercase mx-auto px-10 py-2 text-[15px] font-medium text-danger border rounded-sm text-center border-danger hover:bg-danger hover:text-white hover:border-white"
+          className="uppercase mx-auto w-[220px] h-[60px] text-[14px] font-poppins font-medium text-danger border rounded-sm text-center border-danger hover:bg-danger hover:text-white hover:border-white"
         >
           LOAD MORE
         </button>

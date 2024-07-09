@@ -6,10 +6,10 @@ const SearchSection: React.FC = () => {
 
   return (
     <>
-      <div className="min-h-[60vh] flex justify-center items-center">
+      <div className="min-h-[70vh] md:min-h-[50vh] lg:min-h-[70vh] flex justify-center items-center">
         <div className="text-center w-full">
-          <div className="container mx-auto w-[90%] flex flex-col gap-8">
-            <h2 className="font-bold text-3xl font-serif text-dark">
+          <div className="container mx-auto w-[90%] flex flex-col gap-10">
+            <h2 className="font-semibold font-ibm text-3xl xl:text-5xl text-dark">
               Search News
             </h2>
 
@@ -18,7 +18,7 @@ const SearchSection: React.FC = () => {
                 e.preventDefault();
                 handleSearch(query);
               }}
-              className="mx-auto w-full sm:w-[60%]"
+              className="mx-auto w-full lg:w-[60%] xl:w-[800px]"
             >
               <div className="relative">
                 <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">

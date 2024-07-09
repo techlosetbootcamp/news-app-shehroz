@@ -14,6 +14,11 @@ module.exports = {
         dimSecondary: '#F1F2F3',
       },
     },
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+      nunito: ['Nunito Sans', 'sans-serif'],
+      ibm: ['IBM Plex Serif', 'serif'],
+    },
   },
   plugins: [],
 }

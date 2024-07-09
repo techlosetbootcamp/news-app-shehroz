@@ -24,9 +24,9 @@ export const EditorsPick: React.FC = () => {
     );
 
   return (
-    <div className="max-md:mx-2">
+    <div className="max-md:mx-3">
       <div className="flex text-dark my-4">
-        <h3 className="font-bold text-lg">Editor's Pick</h3>
+        <h3 className="font-semibold text-lg font-poppins">Editor's Pick</h3>
         <p className="flex items-center mx-3">
           <FaStar size={"15"} />
         </p>
@@ -34,9 +34,9 @@ export const EditorsPick: React.FC = () => {
       <div className="pb-6">
         <div className="grid lg:grid-cols-2 gap-4 my-2">
           <div className="md:flex md:gap-4">
-            <div className="flex items-center border md:h-32 sm:min-w-[200px] sm:max-w-[200px]">
+            <div className="flex items-center md:min-w-[272px] min-h-[170px]">
               <img
-                className=" max-md:mb-1 h-full w-full object-cover"
+                className=" max-md:mb-1 w-full md:min-w-[272px] min-h-[170px] object-cover"
                 src={
                   articles[0]?.imageUrl ||
                   `https://placehold.co/4000x2800?text=${articles[0]?.title}`
@@ -48,18 +48,18 @@ export const EditorsPick: React.FC = () => {
               <Link
                 to={articles[0]?.url}
                 target="_blank"
-                className="font-semibold font-serif lg:leading-tight hover:text-danger"
+                className="font-bold font-ibm text-lg lg:leading-tight hover:text-danger"
               >
                 {articles[0]?.title}
               </Link>
-              <p className="text-sm">{articles[0]?.description}</p>
+              <p className="font-nunito">{articles[0]?.description}</p>
             </div>
           </div>
 
           <div className="md:flex md:gap-4">
-            <div className="flex items-center border md:h-32 sm:min-w-[200px] sm:max-w-[200px]">
+            <div className="flex items-center md:min-w-[272px] min-h-[170px] md:max-w-[272px] max-h-[170px]">
               <img
-                className=" h-full max-md:mb-1  w-full object-cover"
+                className=" h-full max-md:mb-1 w-full object-cover md:min-w-[272px] min-h-[170px] md:max-w-[272px] max-h-[170px]"
                 src={
                   articles[1]?.imageUrl ||
                   `https://placehold.co/4000x2800?text=${articles[1]?.title}`
@@ -71,11 +71,11 @@ export const EditorsPick: React.FC = () => {
               <Link
                 to={articles[1]?.url}
                 target="_blank"
-                className="font-semibold font-serif lg:leading-tight hover:text-danger"
+                className="font-bold font-ibm text-lg lg:leading-tight hover:text-danger"
               >
                 {articles[1]?.title}
               </Link>
-              <p className="text-sm">{articles[1]?.description}</p>
+              <p className="font-nunito">{articles[1]?.description}</p>
             </div>
           </div>
         </div>
